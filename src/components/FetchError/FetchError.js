@@ -1,5 +1,5 @@
 import React from 'react';
-import "./FetchError.module.scss";
+import classes from "./FetchError.module.scss";
 
 function FetchError() {
     return (

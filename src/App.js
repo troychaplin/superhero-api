@@ -2,7 +2,7 @@ import React from 'react';
 import FetchData from './utils/FetchData';
 import FetchError from './components/FetchError/FetchError';
 import FetchLoading from './components/FetchLoading/FetchLoading';
-import "./App.module.scss";
+import classes from "./App.module.scss";
 
 function App() {
     // Get vars from FetchData and check for errors / availability of feed

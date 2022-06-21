@@ -1,5 +1,5 @@
 import React from 'react';
-import "./FetchLoading.module.scss";
+import classes from "./FetchLoading.module.scss";
 
 function FetchLoading() {
     return (
