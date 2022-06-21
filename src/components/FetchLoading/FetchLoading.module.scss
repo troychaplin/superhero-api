@@ -1,8 +1,52 @@
 @import "../../styles/vars.scss";
 
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: $mediaSmall;
+    margin: $gap auto 0;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 10px;
 
-    background: rgba(white, 0.2); // TODO remove, temp for visibility
+    svg path {
+        fill: $green;
+    }
+
+    div {
+        display: flex;
+        width: 3.5em;
+        height: 3.5em;
+        margin: 0 auto;
+        border: 3px solid transparent;
+        border-top-color: $green;
+        border-bottom-color: $green;
+        border-radius: 50%;
+        animation: spin 1.5s linear infinite;
+    }
+
+    div:before {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 0.75em;
+        height: 0.75em;
+        border: 3px solid $green;
+        border-radius: 50%;
+        animation: pulse 1s alternate ease-in-out infinite;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes pulse {
+        from {
+            transform: scale(0.5);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
 }
