@@ -8,7 +8,7 @@ import classes from "./App.module.scss";
 function App() {
     // Get vars from FetchData and check for errors / availability of feed
     const { data, isLoading, isError } = FetchData();
-    if (isError) return <FetchError />;
+    if (!isError) return <FetchError />;
     if (isLoading) return <FetchLoading />;
 
     console.log(data);
