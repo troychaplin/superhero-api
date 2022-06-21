@@ -2,6 +2,7 @@ import React from 'react';
 import FetchData from './utils/FetchData';
 import FetchError from './components/FetchError/FetchError';
 import FetchLoading from './components/FetchLoading/FetchLoading';
+import Main from './ui/Main/Main';
 import classes from "./App.module.scss";
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
     console.log(data);
 
     return (
-        <div>
+        <Main className={classes.container}>
             Hello World
-        </div>
+        </Main>
     );
 }
 
