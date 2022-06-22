@@ -11,7 +11,8 @@
 
 ## Resources
 
--   SWR implemented based on [making it reusable](https://swr.vercel.app/docs/getting-started#make-it-reusable)
--   [Font Awesome React Component](https://fontawesome.com/v6/docs/web/use-with/react/) (using the [dynamic icon importing](https://fontawesome.com/v6/docs/web/use-with/react/add-icons) method)
+-   [Making SWR reusable](https://swr.vercel.app/docs/getting-started#make-it-reusable)
+-   [Font Awesome React Component](https://fontawesome.com/v6/docs/web/use-with/react/) - Using the [dynamic icon importing](https://fontawesome.com/v6/docs/web/use-with/react/add-icons) method
 -   [Use SASS modules with React](https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e)
 -   [Loading animations](https://cssfx.netlify.app/)
+-   [Tailwind CSS](https://tailwindcss.com/docs/screen-readers) - I may not be able to use it for this test, but I'm stealing some of the CSS, such as the `sr-only` styles
