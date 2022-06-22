@@ -1,16 +1,16 @@
 @import './styles/vars.scss';
 
 .container {
-    // background: rgba(white, 0.05); // TODO temp usage
-    max-width: $mediaMedium;
+    max-width: $mediaLarge;
     margin: 0 auto;
 
     header {
         display: grid;
         align-items: center;
+        margin-bottom: $gap;
 
-        @media (min-width: $mediaMedium) {
-            grid-template-columns: repeat(2, 1fr);
+        @media (min-width: $mediaSmall) {
+            grid-template-columns: auto 280px;
         }
 
         h1 {
@@ -19,8 +19,8 @@
             text-align: center;
             margin: 0 0 20px 0;
 
-            @media (min-width: $mediaMedium) {
-                font-size: 60px;
+            @media (min-width: $mediaSmall) {
+                font-size: 48px;
                 text-align: left;
                 margin-bottom: 0;
             }
