@@ -2,5 +2,8 @@
 
 .hero-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: $mediaMedium) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
