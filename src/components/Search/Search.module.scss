@@ -1,4 +1,12 @@
+@import '../../styles/vars.scss';
+
 .search {
+    text-align: center;
+
+    @media (min-width: $mediaMedium) {
+        text-align: right;
+    }
+
     label {
         position: absolute;
         width: 1px;

@@ -1,6 +1,24 @@
 @import './styles/vars.scss';
 
 .container {
+    background: rgba(white, 0.05); // TODO temp usage
     max-width: $mediaMedium;
     margin: 0 auto;
+
+    header {
+        display: grid;
+        align-items: center;
+
+        @media (min-width: $mediaMedium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h1 {
+            text-align: center;
+
+            @media (min-width: $mediaMedium) {
+                text-align: left;
+            }
+        }
+    }
 }
