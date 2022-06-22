@@ -1,6 +1,6 @@
-import React from "react";
-import Main from "../../ui/Main/Main";
-import classes from "./FetchLoading.module.scss";
+import React from 'react';
+import Main from '../../ui/Main/Main';
+import classes from './FetchLoading.module.scss';
 
 function FetchLoading() {
     return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Section = (props) => {
     return <section className={props.className}>{props.children}</section>;
