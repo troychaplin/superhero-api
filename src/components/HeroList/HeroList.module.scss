@@ -2,8 +2,18 @@
 
 .hero-list {
     display: grid;
+    grid-gap: $gap;
 
     @media (min-width: $mediaMedium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $mediaLarge) {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    p {
+        margin: 0;
+        background-color: black;
     }
 }

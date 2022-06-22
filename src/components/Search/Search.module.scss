@@ -3,7 +3,7 @@
 .search {
     text-align: center;
 
-    @media (min-width: $mediaMedium) {
+    @media (min-width: $mediaSmall) {
         text-align: right;
     }
 
@@ -14,18 +14,19 @@
         border-radius: 5px;
         background-color: rgba(white, 0.1);
 
-        @media (min-width: $mediaMedium) {
-            width: 50%;
+        @media (min-width: $mediaSmall) {
+            width: calc(100% - 50px);
             font-size: 16px;
             padding: 15px 25px;
         }
     }
 
-    // Added only below medium size
-    @media (max-width: $mediaMedium) {
-        input,
-        ::placeholder {
-            text-align: center;
+    input,
+    ::placeholder {
+        text-align: center;
+
+        @media (min-width: $mediaSmall) {
+            text-align: left;
         }
     }
 
