@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Card = (props) => {
     return <article className={props.className}>{props.children}</article>;
