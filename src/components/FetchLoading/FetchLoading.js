@@ -5,7 +5,7 @@ import classes from './FetchLoading.module.scss';
 function FetchLoading() {
     return (
         <Main className={classes.container}>
-            <div></div>
+            <div className={classes.loading}></div>
             <p>Loading</p>
         </Main>
     );

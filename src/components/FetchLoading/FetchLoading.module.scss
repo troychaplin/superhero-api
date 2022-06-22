@@ -12,7 +12,7 @@
         fill: $green;
     }
 
-    div {
+    .loading {
         display: flex;
         width: 3.5em;
         height: 3.5em;
@@ -24,7 +24,7 @@
         animation: spin 1.5s linear infinite;
     }
 
-    div:before {
+    .loading:before {
         content: '';
         display: block;
         margin: auto;
