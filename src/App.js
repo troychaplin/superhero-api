@@ -3,6 +3,8 @@ import FetchData from './utils/FetchData';
 import FetchError from './components/FetchError/FetchError';
 import FetchLoading from './components/FetchLoading/FetchLoading';
 import Main from './ui/Main/Main';
+import Header from './ui/Header/Header';
+import Search from './components/Search/Search';
 import classes from './App.module.scss';
 
 function App() {
@@ -13,7 +15,14 @@ function App() {
 
     console.log(data);
 
-    return <Main className={classes.container}>Hello World</Main>;
+    return (
+        <Main className={classes.container}>
+            <Header>
+                <h1>SuperHero API</h1>
+                <Search />
+            </Header>
+        </Main>
+    );
 }
 
 export default App;

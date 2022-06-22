@@ -1,8 +1,29 @@
 @import './styles/vars.scss';
 
 .container {
-    max-width: 1024px;
+    // background: rgba(white, 0.05); // TODO temp usage
+    max-width: $mediaMedium;
     margin: 0 auto;
 
-    background: rgba(white, 0.2); // TODO remove, temp for visibility
+    header {
+        display: grid;
+        align-items: center;
+
+        @media (min-width: $mediaMedium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h1 {
+            font-family: $headerFont;
+            font-size: 32px;
+            text-align: center;
+            margin: 0 0 20px 0;
+
+            @media (min-width: $mediaMedium) {
+                font-size: 60px;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
