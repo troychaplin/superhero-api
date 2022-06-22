@@ -1,11 +1,17 @@
 import React from "react";
+import Section from '../../ui/Section/Section';
 // import classes from './HeroList.module.scss';
 
 const HeroList = (props) => {
-    console.log(props.heroData);
+    console.log("HeroList.js", props.heroData);
 
     return (
-        <p>HeroList</p>
+        <Section>
+            {props.heroData
+                .map((heroItem) => (
+                    <p key={heroItem.id}>{heroItem.name}</p>
+                ))}
+        </Section>
     )
 }
 
