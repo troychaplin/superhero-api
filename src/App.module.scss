@@ -13,6 +13,14 @@
             grid-template-columns: auto 280px;
         }
 
+        @media (min-width: $mediaMedium) {
+            grid-template-columns: auto 380px;
+        }
+
+        @media (min-width: $mediaLarge) {
+            grid-template-columns: auto 480px;
+        }
+
         h1 {
             font-family: $headerFont;
             font-size: 32px;
@@ -23,6 +31,10 @@
                 font-size: 48px;
                 text-align: left;
                 margin-bottom: 0;
+            }
+
+            @media (min-width: $mediaMedium) {
+                font-size: 60px;
             }
         }
     }
