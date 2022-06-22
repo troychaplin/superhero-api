@@ -1,8 +1,12 @@
 import React from "react";
-import classes from './FetchLoading.module.scss';
+// import classes from './HeroList.module.scss';
 
 const HeroList = (props) => {
-    return <p>Hero List</p>
+    console.log(props.heroData);
+
+    return (
+        <p>HeroList</p>
+    )
 }
 
 export default HeroList;

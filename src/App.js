@@ -5,6 +5,7 @@ import FetchLoading from './components/FetchLoading/FetchLoading';
 import Main from './ui/Main/Main';
 import Header from './ui/Header/Header';
 import Search from './components/Search/Search';
+import HeroList from './components/HeroList/HeroList';
 import classes from './App.module.scss';
 
 function App() {
@@ -13,14 +14,13 @@ function App() {
     if (isError) return <FetchError />;
     if (isLoading) return <FetchLoading />;
 
-    console.log(data);
-
     return (
         <Main className={classes.container}>
             <Header>
                 <h1>SuperHero API</h1>
                 <Search />
             </Header>
+            <HeroList heroData={data}/>
         </Main>
     );
 }
