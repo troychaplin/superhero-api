@@ -7,6 +7,28 @@
         text-align: right;
     }
 
+    input {
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(white, 0.1);
+
+        @media (min-width: $mediaMedium) {
+            width: 50%;
+            font-size: 16px;
+            padding: 15px 25px;
+        }
+    }
+
+    // Added only below medium size
+    @media (max-width: $mediaMedium) {
+        input,
+        ::placeholder {
+            text-align: center;
+        }
+    }
+
     label {
         position: absolute;
         width: 1px;
