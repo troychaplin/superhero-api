@@ -1,10 +1,30 @@
 # SuperHero API
 
-## Design
+## Getting Started
 
 AddInfo
 
-https://www.figma.com/community/file/1121778636443964664
+## Overall Look and Feel
+
+While the rating criteria states that I am to be loyal to the requested layout, I also considered the "add creative features" item under the triple bonus points heading as the door being left open to present an improved design.
+
+As a designer I felt that the look and feel could be significantly improved so I decided to break this rule and show some design skills by providing a simple card design in Figma. This also allowed me to further expand on the CSS required to show the my depth of knowledge and understanding of a responsive mobile first layout.
+
+- [View the original Figma card design](https://www.figma.com/community/file/1121778636443964664)
+
+## Bonus Points
+
+The following are things that I tried to incorporate into the project in order to earn single, double and triple bonus points. I understand that some of these can also see even more improvements and I look forward to feedback on how I can be better.
+
+- Git flow and feature branches used throughout the project
+- Added ESLint and Prettier to enforce consistent formatting
+- SASS modules to scope style to each component and avoid style conflicts
+- SASS variables and mixins to reduce style duplication
+- Fully responsive layout with 4 breakpoints
+- Unique look and feel including a heading font that could easily be found in any comic book
+- Component composition to improve resuability
+- Simple yet fun custom component for data loading and errors
+
 
 ## Built With
 

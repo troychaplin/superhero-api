@@ -1,2 +1,5 @@
 # Ignore artifacts:
 public
+
+# Ignore readme
+README.md
