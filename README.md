@@ -2,7 +2,14 @@
 
 ## Getting Started
 
-AddInfo
+To get started open a terminal window and navigate to where you want to place a copy of the project and run the commands below. Once completed the project will automatically launch in your default browser.
+
+```
+git clone https://github.com/troychaplin/web-services-frontend-dev-test.git
+cd web-services-frontend-dev-test
+npm install
+npm start
+```
 
 ## Overall Look and Feel
 
