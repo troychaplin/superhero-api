@@ -27,7 +27,7 @@ const HeroCard = (props) => {
                 </ul>
             </div>
 
-            <Button type="button">
+            <Button type="button" className={classes.herocard__button}>
                 <FontAwesomeIcon icon={faSuperpowers} size='2x' />
             </Button>
             

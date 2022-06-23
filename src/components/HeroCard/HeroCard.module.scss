@@ -19,25 +19,8 @@
         grid-template-columns: 170px auto;
     }
 
+    // Keeping svg nested under card keeps it near the hover styles, less confusion
     svg {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-
-        @media (min-width: $mediaSmall) {
-            bottom: 15px;
-            right: 15px;
-            left: initial;
-            transform: initial;
-        }
-
-        @media (min-width: $mediaMedium) {
-            bottom: 20px;
-            right: 20px;
-        }
-
         path {
             fill: $grey;
 
@@ -51,6 +34,28 @@
         path {
             filter: brightness(100%);
         }
+    }
+}
+
+.herocard__button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $mediaSmall) {
+        bottom: 15px;
+        right: 15px;
+        left: initial;
+        transform: initial;
+    }
+
+    @media (min-width: $mediaMedium) {
+        bottom: 20px;
+        right: 20px;
     }
 }
 
