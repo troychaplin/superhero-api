@@ -34,7 +34,7 @@ The following are things that I tried to incorporate into the project in order t
 - Added color elements to indicate if a hero is good, bad or neutral
 
 
-## Built With
+## Project Built With
 
 -   [React](https://reactjs.org/)
 -   [SWR](https://swr.vercel.app/)
