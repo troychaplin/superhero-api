@@ -24,6 +24,7 @@ npm start
 -   [Google Fonts](https://fonts.google.com/)
 -   [Figma](https://www.figma.com/)
 -   [Tenon.io](https://tenon.io/)
+-   [W3C Markup Validation Service](https://validator.w3.org/)
 
 ## Overall Look and Feel
 
@@ -46,6 +47,7 @@ The following are things that I tried to incorporate into the project in order t
 - Component composition to improve resuability
 - Simple yet fun custom component for data loading and errors
 - Added color elements to indicate if a hero is good, bad or neutral
+- Validated with W3C Markup Validation Service
 - A11y tested with Tenon.io
 
 ## Resources
