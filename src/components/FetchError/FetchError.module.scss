@@ -8,8 +8,24 @@
     text-align: center;
     border-radius: 10px;
 
+    h1 {
+        font-family: $headerFont;
+        font-size: 28px;
+        margin: 20px 0 10px 0;
+
+        @media (min-width: $mediaMedium) {
+            font-size: 36px;
+            margin: 25px 0 10px 0;
+        }
+    }
+
     p {
-        margin-top: $gap;
+        font-size: 18px;
+        margin: 0;
+
+        @media (min-width: $mediaMedium) {
+            font-size: 24px;
+        }
     }
 
     svg path {

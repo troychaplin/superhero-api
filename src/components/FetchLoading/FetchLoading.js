@@ -6,7 +6,7 @@ function FetchLoading() {
     return (
         <Main className={classes.container}>
             <div className={classes.loading}></div>
-            <p>Loading</p>
+            <p>Loading...</p>
         </Main>
     );
 }
