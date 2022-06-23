@@ -5,8 +5,12 @@ body {
     margin: 0;
     padding: $gap;
     color: white;
-    background-color: $black;
+    background-color: #151515;
     font-family: $bodyFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @media (min-width: $mediaMedium) {
+        padding: $gap calc($gap * 2);
+    }
 }

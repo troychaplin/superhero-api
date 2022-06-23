@@ -20,7 +20,7 @@ function App() {
     // Get props from seach component and update state
     const searchHandler = (input) => {
         setSearchText(input);
-    }
+    };
 
     return (
         <Main className={classes.container}>

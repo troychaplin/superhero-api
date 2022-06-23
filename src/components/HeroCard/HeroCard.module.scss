@@ -6,10 +6,11 @@
     overflow: hidden;
     padding-bottom: 60px;
     border-radius: 10px;
-    background-color: black;
+    background-color: $black;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 1);
 
     @media (min-width: $mediaMedium) {
-        grid-gap: calc($gap - 10px);
+        grid-gap: $gap;
         grid-template-columns: 170px auto;
         padding-bottom: 0;
     }
@@ -19,6 +20,7 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        cursor: pointer;
 
         @media (min-width: $mediaMedium) {
             bottom: 20px;
@@ -29,6 +31,13 @@
 
         path {
             fill: $grey;
+            filter: brightness(50%);
+        }
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
         }
     }
 }
@@ -39,16 +48,13 @@
     overflow: hidden;
     margin: 30px auto;
     border-radius: 5px;
+    background-size: cover;
 
     @media (min-width: $mediaMedium) {
         width: 170px;
         height: auto;
         margin: 0;
         border-radius: 0;
-    }
-
-    img {
-        display: block; // Removes small gap at bottom of the image
     }
 }
 
@@ -73,12 +79,12 @@
     }
 
     ul {
-        font-size: 14px;
+        font-size: 15px;
         list-style-type: none;
         padding: 0;
 
         @media (min-width: $mediaMedium) {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
@@ -88,5 +94,39 @@
 
     strong {
         font-weight: 600;
+    }
+}
+
+.good {
+    h2 {
+        color: $blue;
+    }
+
+    svg path {
+        fill: $blue;
+        filter: brightness(50%);
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
+        }
+    }
+}
+
+.bad {
+    h2 {
+        color: $red;
+    }
+
+    svg path {
+        fill: $red;
+        filter: brightness(50%);
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
+        }
     }
 }

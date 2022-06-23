@@ -7,9 +7,8 @@ const HeroList = (props) => {
     return (
         <Section className={classes['hero-list']}>
             {props.heroData
-                .filter((heroItem) => heroItem.name.includes(props.filter) )
+                .filter((heroItem) => heroItem.name.toLowerCase().includes(props.filter.toLowerCase()) )
                 .map((heroItem) => (
-                    // <p key={heroItem.id}>{heroItem.name}</p>
                     <HeroCard key={heroItem.id} hero={heroItem} />
                 ))}
         </Section>
