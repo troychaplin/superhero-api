@@ -7,7 +7,15 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(black, 0.9);
+    background-color: rgba(darken($grey, 30%), 0.95);
+}
+
+.herocard__overlay--good {
+    background-color: rgba(darken($blue, 30%), 0.95);
+}
+
+.herocard__overlay--bad {
+    background-color: rgba(darken($red, 30%), 0.95);
 }
 
 .herocard__powers {
@@ -19,6 +27,7 @@
     align-items: center;
     list-style-type: none;
     font-size: 16px;
+    font-weight: 700;
     text-align: center;
     padding: 0 $gap;
     margin: 0;
@@ -34,11 +43,9 @@
         width: calc($gap * 2);
         height: calc($gap * 2);
         font-size: 18px;
-        font-weight: 700;
         margin: 0 auto 10px auto;
         border: 3px solid white;
         border-radius: 100%;
-        background: black;
 
         @media (min-width: $mediaSmall) {
             width: 50px;

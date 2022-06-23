@@ -32,7 +32,7 @@ const HeroCard = (props) => {
             </Button>
             
 
-            <HeroPowers heroPowers={powerstats} />
+            <HeroPowers heroPowers={powerstats} alignment={alignment} />
         </Card>
     )
 }
