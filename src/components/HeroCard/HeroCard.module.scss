@@ -18,23 +18,6 @@
     @media (min-width: $mediaMedium) {
         grid-template-columns: 170px auto;
     }
-
-    // Keeping svg nested under card keeps it near the hover styles, less confusion
-    svg {
-        path {
-            fill: $grey;
-
-            @media (min-width: $mediaSmall) {
-                filter: brightness(40%);
-            }
-        }
-    }
-
-    &:hover svg {
-        path {
-            filter: brightness(100%);
-        }
-    }
 }
 
 .herocard__button {
@@ -56,6 +39,22 @@
     @media (min-width: $mediaMedium) {
         bottom: 20px;
         right: 20px;
+    }
+
+    svg {
+        path {
+            fill: $grey;
+
+            @media (min-width: $mediaSmall) {
+                filter: brightness(40%);
+            }
+        }
+    }
+}
+
+.herocard:hover .herocard__button svg {
+    path {
+        filter: brightness(100%);
     }
 }
 
@@ -127,7 +126,7 @@
         border-right-color: $blue;
     }
 
-    svg path {
+    .herocard__button svg path {
         fill: $blue;
     }
 }
@@ -138,7 +137,7 @@
         border-right-color: $red;
     }
 
-    svg path {
+    .herocard__button svg path {
         fill: $red;
     }
 }
