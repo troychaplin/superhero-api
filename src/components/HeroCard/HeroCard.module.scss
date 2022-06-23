@@ -6,10 +6,11 @@
     overflow: hidden;
     padding-bottom: 60px;
     border-radius: 10px;
-    background-color: black;
+    background-color: $black;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 1);
 
     @media (min-width: $mediaMedium) {
-        grid-gap: calc($gap - 10px);
+        grid-gap: $gap;
         grid-template-columns: 170px auto;
         padding-bottom: 0;
     }
@@ -47,10 +48,6 @@
         margin: 0;
         border-radius: 0;
     }
-
-    img {
-        // display: block; // Removes small gap at bottom of the image
-    }
 }
 
 .content-wrapper {
@@ -74,12 +71,12 @@
     }
 
     ul {
-        font-size: 14px;
+        font-size: 15px;
         list-style-type: none;
         padding: 0;
 
         @media (min-width: $mediaMedium) {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 
