@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../ui/Button/Button";
 import Card from '../../ui/Card/Card';
 import HeroPowers from "../HeroPowers/HeroPowers";
@@ -8,6 +8,8 @@ import { faSuperpowers } from "@fortawesome/free-brands-svg-icons";
 import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
+    const [ isOpen, setIsOpen ] = useState(false);
+
     const { name, biography, appearance, images, powerstats } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
@@ -27,12 +29,21 @@ const HeroCard = (props) => {
                 </ul>
             </div>
 
-            <Button type="button" className={classes.herocard__button}>
+            <Button
+                type="button"
+                className={classes.herocard__button}
+                onClick={() => setIsOpen(true)}
+            >
                 <FontAwesomeIcon icon={faSuperpowers} size='2x' />
             </Button>
             
-
-            <HeroPowers heroPowers={powerstats} alignment={alignment} />
+            {isOpen && (
+            <HeroPowers
+                heroPowers={powerstats}
+                alignment={alignment}
+                onClosePowers={() => setIsOpen(false)}
+            />
+            )}
         </Card>
     )
 }

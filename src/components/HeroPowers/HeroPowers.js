@@ -6,10 +6,16 @@ import classes from './HeroPowers.module.scss';
 
 const HeroPowers = (props) => {
     const { combat, durability, intelligence, power, speed, strength } = props.heroPowers;
-    console.log(props.alignment);
+
+    const closePowersHandler = () => props.onClosePowers(false);
+    
     return (
         <div className={`${classes.herocard__overlay} ${classes["herocard__overlay--" + props.alignment]}`}>
-            <Button className={classes.herocard__close} type="button">
+            <Button
+                className={classes.herocard__close}
+                type="button"
+                onClick={closePowersHandler}
+            >
                 <FontAwesomeIcon icon={faClose} size="lg" />
             </Button>
 
