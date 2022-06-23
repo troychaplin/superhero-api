@@ -39,6 +39,7 @@
     overflow: hidden;
     margin: 30px auto;
     border-radius: 5px;
+    background-size: cover;
 
     @media (min-width: $mediaMedium) {
         width: 170px;
@@ -48,7 +49,7 @@
     }
 
     img {
-        display: block; // Removes small gap at bottom of the image
+        // display: block; // Removes small gap at bottom of the image
     }
 }
 

@@ -10,13 +10,10 @@ const HeroCard = (props) => {
     const { race } = appearance;
     const noData = 'No data available';
 
-    console.log("HeroCard.js", props.hero);
-
     return (
         <Card className={classes["hero-card"]}>
-            <div className={classes["image-wrapper"]}>
-                <img src={images.sm} />
-            </div>
+            <div className={classes["image-wrapper"]} style={{backgroundImage: `url('${images.sm}')`}} />
+
             <div className={classes["content-wrapper"]}>
                 <h2>{name}</h2>
                 <ul>
