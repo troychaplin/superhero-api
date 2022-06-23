@@ -11,6 +11,8 @@ npm install
 npm start
 ```
 
+**Note:** Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
+
 
 ## Project Built With
 
@@ -22,6 +24,7 @@ npm start
 -   [Font Awesome](https://fontawesome.com/)
 -   [Google Fonts](https://fonts.google.com/)
 -   [Figma](https://www.figma.com/)
+-   [Tenon.io](https://tenon.io/)
 
 ## Overall Look and Feel
 
@@ -44,6 +47,7 @@ The following are things that I tried to incorporate into the project in order t
 - Component composition to improve resuability
 - Simple yet fun custom component for data loading and errors
 - Added color elements to indicate if a hero is good, bad or neutral
+- A11y tested with Tenon.io
 
 ## Resources
 
