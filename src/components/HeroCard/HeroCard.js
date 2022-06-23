@@ -1,5 +1,7 @@
 import React from "react";
 import Card from '../../ui/Card/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSuperpowers } from "@fortawesome/free-brands-svg-icons";
 import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
@@ -19,6 +21,7 @@ const HeroCard = (props) => {
                     <li><strong>Publisher:</strong> {props.hero.biography.publisher}</li>
                 </ul>
             </div>
+            <FontAwesomeIcon icon={faSuperpowers} size='2x' />
         </Card>
     )
 }

@@ -1,14 +1,35 @@
 @import '../../styles/vars.scss';
 
 .hero-card {
+    position: relative;
     display: grid;
     overflow: hidden;
+    padding-bottom: 60px;
     border-radius: 10px;
     background-color: black;
 
     @media (min-width: $mediaMedium) {
         grid-gap: calc($gap - 10px);
         grid-template-columns: 170px auto;
+        padding-bottom: 0;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: $mediaMedium) {
+            bottom: 20px;
+            right: 20px;
+            left: initial;
+            transform: initial;
+        }
+
+        path {
+            fill: $grey;
+        }
     }
 }
 
@@ -55,6 +76,7 @@
     }
 
     ul {
+        font-size: 16px;
         list-style-type: none;
         padding: 0;
     }
