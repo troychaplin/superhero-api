@@ -8,6 +8,7 @@ const HeroCard = (props) => {
     const { name, biography, appearance, images } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
+    const noData = 'No data available';
 
     console.log("HeroCard.js", props.hero);
 
@@ -19,10 +20,10 @@ const HeroCard = (props) => {
             <div className={classes["content-wrapper"]}>
                 <h2>{name}</h2>
                 <ul>
-                    <li><strong>Real Name:</strong> {fullName}</li>
-                    <li><strong>Race:</strong> {race}</li>
-                    <li><strong>Alignment:</strong> {alignment}</li>
-                    <li><strong>Publisher:</strong> {publisher}</li>
+                    <li><strong>Real Name:</strong> {fullName || noData}</li>
+                    <li><strong>Race:</strong> {race || noData}</li>
+                    <li><strong>Alignment:</strong> {alignment || noData}</li>
+                    <li><strong>Publisher:</strong> {publisher || noData}</li>
                 </ul>
             </div>
             <FontAwesomeIcon icon={faSuperpowers} size='2x' />
