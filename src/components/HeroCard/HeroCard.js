@@ -12,10 +12,10 @@ const HeroCard = (props) => {
     const noData = 'No data available';
 
     return (
-        <Card className={`${classes["hero-card"]} ${classes[alignment]}`}>
-            <div className={classes["image-wrapper"]} style={{backgroundImage: `url('${images.sm}')`}} />
+        <Card className={`${classes["herocard"]} ${classes["herocard--" + alignment]}`}>
+            <div className={classes["herocard__image"]} style={{backgroundImage: `url('${images.sm}')`}} />
 
-            <div className={classes["content-wrapper"]}>
+            <div className={classes["herocard__content"]}>
                 <h2>{name}</h2>
                 <ul>
                     <li><strong>Real Name:</strong> {fullName || noData}</li>

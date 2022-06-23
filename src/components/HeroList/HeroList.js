@@ -5,7 +5,7 @@ import classes from './HeroList.module.scss';
 
 const HeroList = (props) => {
     return (
-        <Section className={classes['hero-list']}>
+        <Section className={classes.herolist}>
             {props.heroData
                 .filter((heroItem) => heroItem.name.toLowerCase().includes(props.filter.toLowerCase()) )
                 .map((heroItem) => (
