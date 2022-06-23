@@ -18,4 +18,6 @@
 -   [Loading animations](https://cssfx.netlify.app/)
 -   [Tailwind CSS](https://tailwindcss.com/docs/screen-readers) - I may not be able to use it for this test, but I'm stealing some of the CSS to use as mixins
 -   [That time when you find the perfect font for the project](https://fonts.google.com/specimen/Fredericka+the+Great?query=Fredericka)
+-   [Then later you need to find a better body font](https://fonts.google.com/specimen/Fira+Sans+Condensed?query=condensed&category=Sans+Serif,Display)
 -   [Boots responsive breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints) - Used as a starting point, modified for the needs of this project
+-   [Destructuring props in React](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0)

@@ -5,20 +5,24 @@ import { faSuperpowers } from "@fortawesome/free-brands-svg-icons";
 import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
+    const { name, biography, appearance, images } = props.hero;
+    const { fullName, alignment, publisher } = biography;
+    const { race } = appearance;
+
     console.log("HeroCard.js", props.hero);
 
     return (
         <Card className={classes["hero-card"]}>
             <div className={classes["image-wrapper"]}>
-                <img src={props.hero.images.sm} />
+                <img src={images.sm} />
             </div>
             <div className={classes["content-wrapper"]}>
-                <h2>{props.hero.name}</h2>
+                <h2>{name}</h2>
                 <ul>
-                    <li><strong>Real Name:</strong> {props.hero.biography.fullName}</li>
-                    <li><strong>Race:</strong> {props.hero.appearance.race}</li>
-                    <li><strong>Alignment:</strong> {props.hero.biography.alignment}</li>
-                    <li><strong>Publisher:</strong> {props.hero.biography.publisher}</li>
+                    <li><strong>Real Name:</strong> {fullName}</li>
+                    <li><strong>Race:</strong> {race}</li>
+                    <li><strong>Alignment:</strong> {alignment}</li>
+                    <li><strong>Publisher:</strong> {publisher}</li>
                 </ul>
             </div>
             <FontAwesomeIcon icon={faSuperpowers} size='2x' />
