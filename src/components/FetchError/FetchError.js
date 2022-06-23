@@ -11,8 +11,7 @@ function FetchError() {
             <FontAwesomeIcon icon={faQuestion} size='10x' />
             <FontAwesomeIcon icon={faQuestion} size='4x' />
             <h1>Gee willikers Batman</h1>
-            <p>There has been an error loading the SuperHero API feed. This must be the handy work of the Riddler.
-            </p>
+            <p>There has been an error loading the SuperHero API feed. This must be the handy work of the Riddler.</p>
         </Main>
     );
 }
