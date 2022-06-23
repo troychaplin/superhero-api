@@ -1,5 +1,33 @@
 @import '../../styles/vars.scss';
 
 .hero-card {
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
     background-color: black;
+
+    @media (min-width: $mediaMedium) {
+        grid-gap: calc($gap / 2);
+        grid-template-columns: 160px auto;
+    }
+}
+
+.image-wrapper {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin: 25px auto;
+    border-radius: 100px;
+
+    @media (min-width: $mediaMedium) {
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    img {
+        display: block; // Removes small gap at bottom of the image
+        width: 100%;
+        height: auto;
+    }
 }
