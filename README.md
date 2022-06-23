@@ -11,6 +11,18 @@ npm install
 npm start
 ```
 
+
+## Project Built With
+
+-   [React](https://reactjs.org/)
+-   [SWR](https://swr.vercel.app/)
+-   [Prettier](https://prettier.io/)
+-   [ESLint](https://eslint.org/)
+-   [SASS](https://sass-lang.com/)
+-   [Font Awesome](https://fontawesome.com/)
+-   [Google Fonts](https://fonts.google.com/)
+-   [Figma](https://www.figma.com/)
+
 ## Overall Look and Feel
 
 While the rating criteria states that I am to be loyal to the requested layout, I also considered the "add creative features" item under the triple bonus points heading as the door being left open to present an improved design.
@@ -32,18 +44,6 @@ The following are things that I tried to incorporate into the project in order t
 - Component composition to improve resuability
 - Simple yet fun custom component for data loading and errors
 - Added color elements to indicate if a hero is good, bad or neutral
-
-
-## Project Built With
-
--   [React](https://reactjs.org/)
--   [SWR](https://swr.vercel.app/)
--   [Prettier](https://prettier.io/)
--   [ESLint](https://eslint.org/)
--   [SASS](https://sass-lang.com/)
--   [Font Awesome](https://fontawesome.com/)
--   [Google Fonts](https://fonts.google.com/)
--   [Figma](https://www.figma.com/)
 
 ## Resources
 
