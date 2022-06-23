@@ -9,4 +9,8 @@ body {
     font-family: $bodyFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @media (min-width: $mediaMedium) {
+        padding: $gap calc($gap * 2);
+    }
 }
