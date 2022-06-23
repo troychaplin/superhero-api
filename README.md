@@ -1,5 +1,11 @@
 # SuperHero API
 
+## Design
+
+AddInfo
+
+https://www.figma.com/community/file/1121778636443964664
+
 ## Built With
 
 -   [React](https://reactjs.org/)
@@ -9,6 +15,7 @@
 -   [SASS](https://sass-lang.com/)
 -   [Font Awesome](https://fontawesome.com/)
 -   [Google Fonts](https://fonts.google.com/)
+-   [Figma](https://www.figma.com/)
 
 ## Resources
 

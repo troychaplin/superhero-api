@@ -9,10 +9,14 @@
     background-color: $black;
     box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 1);
 
-    @media (min-width: $mediaMedium) {
+    @media (min-width: $mediaSmall) {
         grid-gap: calc($gap + 15px);
-        grid-template-columns: 170px auto;
+        grid-template-columns: 140px auto;
         padding-bottom: 0;
+    }
+
+    @media (min-width: $mediaMedium) {
+        grid-template-columns: 170px auto;
     }
 
     svg {
@@ -22,17 +26,22 @@
         transform: translateX(-50%);
         cursor: pointer;
 
+        @media (min-width: $mediaSmall) {
+            bottom: 15px;
+            right: 15px;
+            left: initial;
+            transform: initial;
+        }
+
         @media (min-width: $mediaMedium) {
             bottom: 20px;
             right: 20px;
-            left: initial;
-            transform: initial;
         }
 
         path {
             fill: $grey;
 
-            @media (min-width: $mediaMedium) {
+            @media (min-width: $mediaSmall) {
                 filter: brightness(40%);
             }
         }
@@ -54,13 +63,17 @@
     background-size: cover;
     border-bottom: 5px solid $grey;
 
+    @media (min-width: $mediaSmall) {
+        width: 140px;
+        height: 100%;
+        margin: 0;
+        border-right: 10px solid $grey;
+        border-bottom: none;
+        border-radius: 0;
+    }
+
     @media (min-width: $mediaMedium) {
         width: 170px;
-        height: auto;
-        margin: 0;
-        border-radius: 0;
-        border-bottom: none;
-        border-right: 10px solid $grey;
     }
 }
 
@@ -68,7 +81,7 @@
     text-align: center;
     padding: 0 20px;
 
-    @media (min-width: $mediaMedium) {
+    @media (min-width: $mediaSmall) {
         text-align: left;
         padding: 20px 20px 20px 0;
     }
@@ -78,7 +91,7 @@
         font-size: 28px;
         margin: 0 0 10px 0;
 
-        @media (min-width: $mediaMedium) {
+        @media (min-width: $mediaSmall) {
             font-size: 36px;
             margin: 5px 0 15px 0;
         }
@@ -89,7 +102,7 @@
         list-style-type: none;
         padding: 0;
 
-        @media (min-width: $mediaMedium) {
+        @media (min-width: $mediaSmall) {
             font-size: 18px;
         }
     }
