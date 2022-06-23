@@ -20,6 +20,7 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        cursor: pointer;
 
         @media (min-width: $mediaMedium) {
             bottom: 20px;
@@ -30,6 +31,13 @@
 
         path {
             fill: $grey;
+            filter: brightness(50%);
+        }
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
         }
     }
 }
@@ -86,5 +94,39 @@
 
     strong {
         font-weight: 600;
+    }
+}
+
+.good {
+    h2 {
+        color: $blue;
+    }
+
+    svg path {
+        fill: $blue;
+        filter: brightness(50%);
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
+        }
+    }
+}
+
+.bad {
+    h2 {
+        color: $red;
+    }
+
+    svg path {
+        fill: $red;
+        filter: brightness(50%);
+    }
+
+    &:hover svg {
+        path {
+            filter: brightness(100%);
+        }
     }
 }

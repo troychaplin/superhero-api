@@ -10,8 +10,10 @@ const HeroCard = (props) => {
     const { race } = appearance;
     const noData = 'No data available';
 
+    console.log(alignment);
+
     return (
-        <Card className={classes["hero-card"]}>
+        <Card className={`${classes["hero-card"]} ${classes[alignment]}`}>
             <div className={classes["image-wrapper"]} style={{backgroundImage: `url('${images.sm}')`}} />
 
             <div className={classes["content-wrapper"]}>
