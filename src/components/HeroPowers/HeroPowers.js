@@ -1,4 +1,7 @@
 import React from "react";
+import Button from "../../ui/Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import classes from './HeroPowers.module.scss';
 
 const HeroPowers = (props) => {
@@ -6,6 +9,10 @@ const HeroPowers = (props) => {
 
     return (
         <div className={classes.herocard__overlay}>
+            <Button className={classes.herocard__close} type="button">
+                <FontAwesomeIcon icon={faClose} size="lg" />
+            </Button>
+
             <ul className={classes.herocard__powers}>
                 <li><span>{combat}</span>Combat</li>
                 <li><span>{durability}</span>Durability</li>

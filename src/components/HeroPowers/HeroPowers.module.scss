@@ -45,8 +45,18 @@
             height: 50px;
         }
     }
+}
 
-    // li {
-    //     background-color: rgba(white, 0.2);
-    // }
+.herocard__close {
+    position: absolute;
+    top: calc($gap / 3);
+    right: calc($gap / 3);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg path {
+        fill: white;
+        filter: brightness(100%);
+    }
 }
