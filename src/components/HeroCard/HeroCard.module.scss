@@ -1,0 +1,92 @@
+@import '../../styles/vars.scss';
+
+.hero-card {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    background-color: black;
+
+    @media (min-width: $mediaMedium) {
+        grid-gap: calc($gap - 10px);
+        grid-template-columns: 170px auto;
+        padding-bottom: 0;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: $mediaMedium) {
+            bottom: 20px;
+            right: 20px;
+            left: initial;
+            transform: initial;
+        }
+
+        path {
+            fill: $grey;
+        }
+    }
+}
+
+.image-wrapper {
+    width: 160px;
+    height: 200px;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 5px;
+
+    @media (min-width: $mediaMedium) {
+        width: 170px;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    img {
+        display: block; // Removes small gap at bottom of the image
+    }
+}
+
+.content-wrapper {
+    text-align: center;
+    padding: 0 20px;
+
+    @media (min-width: $mediaMedium) {
+        text-align: left;
+        padding: 20px 20px 20px 0;
+    }
+
+    h2 {
+        font-family: $headerFont;
+        font-size: 28px;
+        margin: 0 0 10px 0;
+
+        @media (min-width: $mediaMedium) {
+            font-size: 36px;
+            margin: 5px 0 15px 0;
+        }
+    }
+
+    ul {
+        font-size: 14px;
+        list-style-type: none;
+        padding: 0;
+
+        @media (min-width: $mediaMedium) {
+            font-size: 16px;
+        }
+    }
+
+    li:not(:last-child) {
+        padding-bottom: 8px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}

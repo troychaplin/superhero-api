@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;600&family=Fredericka+the+Great&display=swap');
 @import './styles/vars.scss';
 
 body {
@@ -6,7 +6,7 @@ body {
     padding: $gap;
     color: white;
     background-color: $black;
-    font-family: $baseFont;
+    font-family: $bodyFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

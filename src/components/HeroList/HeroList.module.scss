@@ -11,9 +11,4 @@
     @media (min-width: $mediaLarge) {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    p {
-        margin: 0;
-        background-color: black;
-    }
 }
