@@ -12,7 +12,7 @@ As a designer I felt that the look and feel could be significantly improved so I
 
 - [View the original Figma card design](https://www.figma.com/community/file/1121778636443964664)
 
-## Bonus Points
+## Achieving Bonus Points
 
 The following are things that I tried to incorporate into the project in order to earn single, double and triple bonus points. I understand that some of these can also see even more improvements and I look forward to feedback on how I can be better.
 
@@ -24,6 +24,7 @@ The following are things that I tried to incorporate into the project in order t
 - Unique look and feel including a heading font that could easily be found in any comic book
 - Component composition to improve resuability
 - Simple yet fun custom component for data loading and errors
+- Added color elements to indicate if a hero is good, bad or neutral
 
 
 ## Built With
