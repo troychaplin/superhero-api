@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../ui/Button/Button";
 import Card from '../../ui/Card/Card';
 import HeroPowers from "../HeroPowers/HeroPowers";
 import { FirstLetterUpper } from '../../utils/Helper';
@@ -25,7 +26,11 @@ const HeroCard = (props) => {
                     <li><strong>Publisher:</strong> {publisher || noData}</li>
                 </ul>
             </div>
-            <FontAwesomeIcon icon={faSuperpowers} size='2x' />
+
+            <Button type="button">
+                <FontAwesomeIcon icon={faSuperpowers} size='2x' />
+            </Button>
+            
 
             <HeroPowers heroPowers={powerstats} />
         </Card>
