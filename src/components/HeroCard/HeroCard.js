@@ -1,12 +1,13 @@
 import React from "react";
 import Card from '../../ui/Card/Card';
+import HeroPowers from "../HeroPowers/HeroPowers";
 import { FirstLetterUpper } from '../../utils/Helper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSuperpowers } from "@fortawesome/free-brands-svg-icons";
 import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
-    const { name, biography, appearance, images } = props.hero;
+    const { name, biography, appearance, images, powerstats } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
     const noData = 'No data available';
@@ -25,6 +26,8 @@ const HeroCard = (props) => {
                 </ul>
             </div>
             <FontAwesomeIcon icon={faSuperpowers} size='2x' />
+
+            <HeroPowers heroPowers={powerstats} />
         </Card>
     )
 }
