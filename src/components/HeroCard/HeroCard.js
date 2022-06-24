@@ -5,6 +5,7 @@ import HeroPowers from '../HeroPowers/HeroPowers';
 import { FirstLetterUpper } from '../../utils/Helper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSuperpowers } from '@fortawesome/free-brands-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
@@ -41,22 +42,24 @@ const HeroCard = (props) => {
                     <li>
                         <strong>Publisher: </strong>{publisher || noData}
                     </li>
-                    <li>
-                        <strong>Tags: </strong>
-                        {tags?.map((item, index) => (
-                            <span className={classes.herocard__tag} key={index}>
-                                {item}
-                            </span>
-                        )) || noData}
-                    </li>
                 </ul>
-                <form onSubmit={addTagHandler}>
+                <div className={classes.herocard__taglist}>
+                {tags?.map((item, index) => (
+                    <span className={classes.herocard__tag} key={index}>
+                        {item}
+                    </span>
+                ))}
+                </div>
+                <form className={classes.herocard__tagform} onSubmit={addTagHandler}>
                     <input
                         type="text"
                         value={enteredTag}
+                        placeholder={"Tag " + name}
                         onChange={(event) => setEnteredTag(event.target.value)}
                     />
-                    <Button type="submit">Add Tag</Button>
+                    <Button type="submit">
+                        <FontAwesomeIcon icon={faPlus} size='1x' />
+                    </Button>
                 </form>
             </div>
 
