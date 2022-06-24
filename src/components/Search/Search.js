@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Search.module.scss';
 
 function Search(props) {
-    // Capture the input and set as props
+    // Capture search input and set as props
     const searchHandler = (event) => {
         props.onSearchInput(event.target.value);
     };

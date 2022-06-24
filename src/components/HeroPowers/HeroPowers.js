@@ -5,13 +5,12 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 import classes from './HeroPowers.module.scss';
 
 const HeroPowers = (props) => {
+    // Destructuring props from powers from hero API feed
     const { combat, durability, intelligence, power, speed, strength } = props.heroPowers;
-
-    const closePowersHandler = () => props.onClosePowers(false);
 
     return (
         <div className={`${classes.herocard__overlay} ${classes['herocard__overlay--' + props.alignment]}`}>
-            <Button className={classes.herocard__close} type='button' onClick={closePowersHandler}>
+            <Button className={classes.herocard__close} type='button' onClick={() => props.onClosePowers(false)}>
                 <FontAwesomeIcon icon={faClose} size='lg' />
             </Button>
 
