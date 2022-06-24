@@ -11,15 +11,15 @@ const HeroCard = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [enteredTag, setEnteredTag] = useState("");
 
-    const { name, biography, appearance, images, powerstats } = props.hero;
+    const { id, name, biography, appearance, images, powerstats } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
     const noData = 'No data available';
 
     const addTagHandler = (event) => {
         event.preventDefault();
+        props.onAddTag({enteredTag, id});
         setEnteredTag("");
-        console.log(enteredTag);
     }
 
     return (

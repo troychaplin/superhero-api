@@ -9,13 +9,18 @@ import HeroList from './components/HeroList/HeroList';
 import classes from './App.module.scss';
 
 function App() {
-    // Set state for input field
-    const [searchText, setSearchText] = useState('');
-
+    // Save stuff to state
+    const [searchText, setSearchText] = useState(''); // Search input field
+    
     // Get vars from FetchData and check for errors / availability of feed
     const { data, isLoading, isError } = FetchData();
     if (isError) return <FetchError />;
     if (isLoading) return <FetchLoading />;
+
+
+    const addTagHandler = (tag) => {
+        console.log("App.js", tag);
+    }
 
     // Get props from seach component and update state
     const searchHandler = (input) => {
@@ -28,7 +33,7 @@ function App() {
                 <h1>SuperHero API</h1>
                 <Search selected={searchText} onSearchInput={searchHandler} />
             </Header>
-            <HeroList heroData={data} filter={searchText} />
+            <HeroList heroData={data} filter={searchText} onAddTag={addTagHandler} />
         </Main>
     );
 }
