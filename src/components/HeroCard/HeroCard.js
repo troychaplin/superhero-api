@@ -52,10 +52,12 @@ const HeroCard = (props) => {
                 </div>
                 <form className={classes.herocard__tagform} onSubmit={addTagHandler}>
                     <input
-                        type="text"
-                        value={enteredTag}
+                        type='text'
+                        aria-label={"Tag " + name}
+                        aria-required='true'
+                        name='Hero Tag'
+                        autoComplete='name'
                         placeholder={"Tag " + name}
-                        onChange={(event) => setEnteredTag(event.target.value)}
                     />
                     <Button type="submit">
                         <FontAwesomeIcon icon={faPlus} size='1x' />
