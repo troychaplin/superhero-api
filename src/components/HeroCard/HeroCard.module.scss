@@ -1,0 +1,199 @@
+@import '../../styles/vars.scss';
+
+.herocard {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    background-color: $black;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 1);
+
+    @media (min-width: $mediaSmall) {
+        grid-gap: calc($gap + 15px);
+        grid-template-columns: 140px auto;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: $mediaMedium) {
+        grid-template-columns: 170px auto;
+    }
+}
+
+.herocard__button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $mediaSmall) {
+        bottom: 15px;
+        right: 15px;
+        left: initial;
+        transform: initial;
+    }
+
+    @media (min-width: $mediaMedium) {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    svg {
+        path {
+            fill: $grey;
+
+            @media (min-width: $mediaSmall) {
+                filter: brightness(40%);
+            }
+        }
+    }
+}
+
+.herocard:hover .herocard__button svg {
+    path {
+        filter: brightness(100%);
+    }
+}
+
+.herocard__image {
+    width: 160px;
+    height: 200px;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-size: cover;
+    border-bottom: 5px solid $grey;
+
+    @media (min-width: $mediaSmall) {
+        width: 140px;
+        height: 100%;
+        margin: 0;
+        border-right: 10px solid $grey;
+        border-bottom: none;
+        border-radius: 0;
+    }
+
+    @media (min-width: $mediaMedium) {
+        width: 170px;
+    }
+}
+
+.herocard__content {
+    text-align: center;
+    padding: 0 20px;
+
+    @media (min-width: $mediaSmall) {
+        text-align: left;
+        padding: 20px 20px 20px 0;
+    }
+
+    h2 {
+        font-family: $headerFont;
+        font-size: 28px;
+        margin: 0 0 10px 0;
+
+        @media (min-width: $mediaSmall) {
+            font-size: 36px;
+            margin: 5px 0 15px 0;
+        }
+    }
+
+    ul {
+        font-size: 15px;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: $gap;
+
+        @media (min-width: $mediaSmall) {
+            font-size: 18px;
+        }
+    }
+
+    li:not(:last-child) {
+        padding-bottom: 8px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.herocard__taglist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.herocard__tag {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 2px;
+    margin: 0 8px 8px 0;
+    background-color: rgba(darken($grey, 30%), 0.95);
+}
+
+.herocard--good .herocard__tag {
+    background-color: rgba(darken($blue, 30%), 0.95);
+}
+
+.herocard--bad .herocard__tag {
+    background-color: rgba(darken($red, 30%), 0.95);
+}
+
+.herocard__tagform {
+    display: grid;
+    grid-template-columns: calc(100% - 30px) 30px;
+    margin-top: calc($gap / 2);
+    border-radius: 2px;
+    background-color: rgba(white, 0.1);
+
+    @media (min-width: $mediaSmall) {
+        width: calc(100% - 80px);
+    }
+
+    input {
+        font-size: 12px;
+        color: white;
+        margin-right: 5px;
+        padding: 8px;
+        border: none;
+        background-color: transparent;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    button {
+        border: none;
+        background: transparent;
+    }
+
+    svg path {
+        fill: black;
+    }
+}
+
+.herocard--good {
+    .herocard__image {
+        border-bottom-color: $blue;
+        border-right-color: $blue;
+    }
+
+    .herocard__button svg path {
+        fill: $blue;
+    }
+}
+
+.herocard--bad {
+    .herocard__image {
+        border-bottom-color: $red;
+        border-right-color: $red;
+    }
+
+    .herocard__button svg path {
+        fill: $red;
+    }
+}

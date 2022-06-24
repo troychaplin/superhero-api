@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;600&family=Fredericka+the+Great&display=swap');
+@import './styles/vars.scss';
+
+body {
+    margin: 0;
+    padding: $gap;
+    color: white;
+    background-color: #151515;
+    font-family: $bodyFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (min-width: $mediaMedium) {
+        padding: $gap calc($gap * 2);
+    }
+}

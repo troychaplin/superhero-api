@@ -1,0 +1,20 @@
+@import './mixins.scss';
+
+$mediaSmall: 768px;
+$mediaMedium: 992px;
+$mediaLarge: 1580px;
+$mediaXLarge: 1920px;
+
+// Fonts
+$headerFont: 'Fredericka the Great', cursive;
+$bodyFont: 'Fira Sans Condensed', sans-serif;
+
+// Spacing
+$gap: 30px;
+
+// Colors
+$black: #1f1f1f;
+$grey: #999999;
+$green: #209155;
+$blue: #6cafd4;
+$red: #d17b7b;

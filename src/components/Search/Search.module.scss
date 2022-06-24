@@ -1,0 +1,36 @@
+@import '../../styles/vars.scss';
+
+.search {
+    text-align: center;
+
+    @media (min-width: $mediaSmall) {
+        text-align: right;
+    }
+
+    input {
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgba(white, 0.1);
+
+        @media (min-width: $mediaSmall) {
+            width: calc(100% - 50px);
+            font-size: 16px;
+            padding: 15px 25px;
+        }
+    }
+
+    input,
+    ::placeholder {
+        text-align: center;
+
+        @media (min-width: $mediaSmall) {
+            text-align: left;
+        }
+    }
+
+    label {
+        @include sr-only;
+    }
+}
