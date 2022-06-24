@@ -20,6 +20,7 @@ const HeroCard = (props) => {
     const addTagHandler = (event) => {
         event.preventDefault();
         props.addTagToHero(enteredTag, id);
+        props.addTagToList(enteredTag);
         setEnteredTag("");
     }
     

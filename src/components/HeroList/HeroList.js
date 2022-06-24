@@ -9,7 +9,7 @@ const HeroList = (props) => {
             {props.heroData
                 .filter((heroItem) => heroItem.name.toLowerCase().includes(props.filter.toLowerCase()))
                 .map((heroItem, index) => (
-                    <HeroCard key={index} hero={heroItem} addTagToHero={props.addTagToHero} />
+                    <HeroCard key={index} hero={heroItem} addTagToHero={props.addTagToHero} addTagToList={props.addTagToList} />
                 ))}
         </Section>
     );

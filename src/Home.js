@@ -23,6 +23,11 @@ function Home(props) {
         });
         setHeroes(addHeroTag);
     };
+    
+    // Add new tags to state
+    const addTagToList = (tag) => {
+        console.log(tag);
+    };
 
     // Get props from seach component and update state
     const searchHandler = (input) => {
@@ -35,7 +40,7 @@ function Home(props) {
                 <h1>SuperHero API</h1>
                 <Search selected={searchText} onSearchInput={searchHandler} />
             </Header>
-            <HeroList heroData={props.data} filter={searchText} addTagToHero={addTagToHero} />
+            <HeroList heroData={props.data} filter={searchText} addTagToHero={addTagToHero} addTagToList={addTagToList} />
         </Main>
     );
 }
