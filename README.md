@@ -1,5 +1,7 @@
 # SuperHero API
 
+_Version 1.0.2_
+
 Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
 
 ## Getting Started
@@ -49,6 +51,7 @@ The following are things that I tried to incorporate into the project in order t
 - Added color elements to indicate if a hero is good, bad or neutral
 - Validated with W3C Markup Validation Service
 - A11y tested with Tenon.io
+- Added changelog for release notes
 
 ## Resources
 
@@ -61,3 +64,4 @@ The following are things that I tried to incorporate into the project in order t
 -   [Then later you need to find a better body font](https://fonts.google.com/specimen/Fira+Sans+Condensed?query=condensed&category=Sans+Serif,Display)
 -   [Boots responsive breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints) - Used as a starting point, modified for the needs of this project
 -   [Destructuring props in React](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0)
+-   [Keep a changelog](https://keepachangelog.com/en/1.0.0/)
