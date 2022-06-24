@@ -9,11 +9,18 @@ import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [enteredTag, setEnteredTag] = useState("");
 
     const { name, biography, appearance, images, powerstats } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
     const noData = 'No data available';
+
+    const addTagHandler = (event) => {
+        event.preventDefault();
+        setEnteredTag("");
+        console.log(enteredTag);
+    }
 
     return (
         <Card className={`${classes['herocard']} ${classes['herocard--' + alignment]}`}>
@@ -35,6 +42,14 @@ const HeroCard = (props) => {
                         <strong>Publisher:</strong> {publisher || noData}
                     </li>
                 </ul>
+                <form onSubmit={addTagHandler}>
+                    <input
+                        type="text"
+                        value={enteredTag}
+                        onChange={(event) => setEnteredTag(event.target.value)}
+                    />
+                    <Button type="submit">Add Tag</Button>
+                </form>
             </div>
 
             <Button type='button' className={classes.herocard__button} onClick={() => setIsOpen(true)}>
