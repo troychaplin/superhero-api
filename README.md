@@ -58,6 +58,10 @@ The following are things that I tried to incorporate into the project in order t
 - A11y tested with Tenon.io
 - Added changelog for release notes
 
+## Easter Egg
+
+As a means to play with `useEffect` and learn it first hand I've added an easter egg to the project. **Hint:** it's a popular mexican food whose fast food chain is represented by a chihuahua.
+
 ## Resources
 
 -   [SuperHero API](https://akabab.github.io/superhero-api/api/)

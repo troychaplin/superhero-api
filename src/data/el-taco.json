@@ -1,0 +1,37 @@
+{
+    "id": 732,
+    "name": "El Taco",
+    "slug": "el-taco",
+    "powerstats": {
+        "intelligence": 96,
+        "strength": 99,
+        "speed": 93,
+        "durability": 91,
+        "power": 97,
+        "combat": 96
+    },
+    "appearance": {
+        "gender": "Male",
+        "race": "Human",
+        "height": ["6'8", "203 cm"],
+        "weight": ["200 lb", "91 kg"],
+        "eyeColor": "Blue",
+        "hairColor": "Blonde"
+    },
+    "biography": {
+        "fullName": "Daniel Richard Brown",
+        "alterEgos": "No alter egos found.",
+        "aliases": ["Danny Bee"],
+        "placeOfBirth": "Ottawa, Ontario",
+        "firstAppearance": "The Incredible Hulk #180 (October 1974)",
+        "publisher": "Marvel Comics",
+        "alignment": "good"
+    },
+    "work": {
+        "occupation": "Father, husband, designer",
+        "base": "-"
+    },
+    "images": {
+        "sm": "https://dev.troychaplin.ca/eltaco/eltaco.jpg"
+    }
+}
