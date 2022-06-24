@@ -21,7 +21,7 @@ const HeroCard = (props) => {
         props.addTagToHero(enteredTag, id);
         setEnteredTag("");
     }
-
+    
     return (
         <Card className={`${classes['herocard']} ${classes['herocard--' + alignment]}`}>
             <div className={classes['herocard__image']} style={{ backgroundImage: `url('${images.sm}')` }} />
@@ -30,20 +30,21 @@ const HeroCard = (props) => {
                 <h2>{name}</h2>
                 <ul>
                     <li>
-                        <strong>Real Name:</strong> {fullName || noData}
+                        <strong>Real Name: </strong>{fullName || noData}
                     </li>
                     <li>
-                        <strong>Race:</strong> {race || noData}
+                        <strong>Race: </strong>{race || noData}
                     </li>
                     <li>
-                        <strong>Alignment:</strong> {FirstLetterUpper(alignment) || noData}
+                        <strong>Alignment: </strong>{FirstLetterUpper(alignment) || noData}
                     </li>
                     <li>
-                        <strong>Publisher:</strong> {publisher || noData}
+                        <strong>Publisher: </strong>{publisher || noData}
                     </li>
                     <li>
-                        <strong>Tags:</strong> {tags?.map((item, index) => (
-                            <span className={classes.tagItem} key={index}>
+                        <strong>Tags: </strong>
+                        {tags?.map((item, index) => (
+                            <span className={classes.herocard__tag} key={index}>
                                 {item}
                             </span>
                         )) || noData}

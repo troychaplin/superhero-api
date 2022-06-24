@@ -7,13 +7,13 @@ import classes from './Home.module.scss';
 
 function Home(props) {
     // Save stuff to state
+    const [heroes, setHeroes] = useState(props.data); // Hero API feed
     const [searchText, setSearchText] = useState(''); // Search input field
-    const [updateTags, setUpdateTags] = useState([]);
-    const [heroes, setHeroes] = useState(props.data);
 
+    // Add entered tag to hero and update state
     const addTagToHero = (tag, id) => {
-        const result = [...heroes];
-        result.map((item) => {
+        const addHeroTag = [...heroes];
+        addHeroTag.map((item) => {
             if (id !== item.id) return item;
             if (item.tags) {
                 if (item.tags.includes(tag)) return false;
@@ -21,12 +21,8 @@ function Home(props) {
             }
             return (item.tags = [tag]);
         });
-        setHeroes(result);
+        setHeroes(addHeroTag);
     };
-
-    const addTagHandler = (updatedHero) => {
-        setUpdateTags([...updateTags, updatedHero.enteredTag]);
-    }
 
     // Get props from seach component and update state
     const searchHandler = (input) => {
@@ -39,7 +35,7 @@ function Home(props) {
                 <h1>SuperHero API</h1>
                 <Search selected={searchText} onSearchInput={searchHandler} />
             </Header>
-            <HeroList heroData={props.data} filter={searchText} onAddTag={addTagHandler} addTagToHero={addTagToHero} />
+            <HeroList heroData={props.data} filter={searchText} addTagToHero={addTagToHero} />
         </Main>
     );
 }

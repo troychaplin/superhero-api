@@ -120,6 +120,10 @@
     }
 }
 
+.herocard__tag {
+    background-color: rgba(white, 0.2);
+}
+
 .herocard--good {
     .herocard__image {
         border-bottom-color: $blue;
