@@ -1,6 +1,6 @@
 # SuperHero API
 
-_Version 1.1.0_
+_Version 1.1.1_
 
 Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
 
@@ -60,6 +60,7 @@ The following are things that I tried to incorporate into the project in order t
 
 ## Resources
 
+-   [SuperHero API](https://akabab.github.io/superhero-api/api/)
 -   [Making SWR reusable](https://swr.vercel.app/docs/getting-started#make-it-reusable)
 -   [Font Awesome React Component](https://fontawesome.com/v6/docs/web/use-with/react/) - Using the [dynamic icon importing](https://fontawesome.com/v6/docs/web/use-with/react/add-icons) method
 -   [Use SASS modules with React](https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e)
