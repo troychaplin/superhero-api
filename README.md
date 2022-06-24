@@ -1,6 +1,6 @@
 # SuperHero API
 
-_Version 1.1.1_
+_Version 1.2.0_
 
 Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
 
@@ -57,6 +57,10 @@ The following are things that I tried to incorporate into the project in order t
 - Validated with W3C Markup Validation Service
 - A11y tested with Tenon.io
 - Added changelog for release notes
+
+## Easter Egg
+
+As a means to play with `useEffect` and learn it first hand I've added an easter egg to the project. **Hint:** it's a popular mexican food whose fast food chain is represented by a chihuahua.
 
 ## Resources
 
