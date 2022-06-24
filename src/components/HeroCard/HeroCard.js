@@ -59,6 +59,7 @@ const HeroCard = (props) => {
                         name='Hero Tag'
                         autoComplete='name'
                         placeholder={"Tag " + name}
+                        onChange={(event) => setEnteredTag(event.target.value)}
                     />
                     <Button type="submit">
                         <FontAwesomeIcon icon={faPlus} size='1x' />
