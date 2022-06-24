@@ -52,6 +52,17 @@
     }
 }
 
+// Modify button for good guys
+.herocard--good .herocard__button svg path {
+    fill: $blue;
+}
+
+// Modify button for good guys
+.herocard--bad .herocard__button svg path {
+    fill: $red;
+}
+
+// Bring power button to full brightness when card is hovered
 .herocard:hover .herocard__button svg {
     path {
         filter: brightness(100%);
@@ -79,6 +90,18 @@
     @media (min-width: $mediaMedium) {
         width: 170px;
     }
+}
+
+// Modify image and button for good guys
+.herocard--good .herocard__image {
+    border-bottom-color: $blue;
+    border-right-color: $blue;
+}
+
+// Modify image bad guys
+.herocard--bad .herocard__image {
+    border-bottom-color: $red;
+    border-right-color: $red;
 }
 
 .herocard__content {
@@ -134,10 +157,12 @@
     background-color: rgba(darken($grey, 30%), 0.95);
 }
 
+// Set blue overlay for good guy overlays
 .herocard--good .herocard__tag {
     background-color: rgba(darken($blue, 30%), 0.95);
 }
 
+// Set red overlay for bad guy overlays
 .herocard--bad .herocard__tag {
     background-color: rgba(darken($red, 30%), 0.95);
 }
@@ -173,27 +198,5 @@
 
     svg path {
         fill: black;
-    }
-}
-
-.herocard--good {
-    .herocard__image {
-        border-bottom-color: $blue;
-        border-right-color: $blue;
-    }
-
-    .herocard__button svg path {
-        fill: $blue;
-    }
-}
-
-.herocard--bad {
-    .herocard__image {
-        border-bottom-color: $red;
-        border-right-color: $red;
-    }
-
-    .herocard__button svg path {
-        fill: $red;
     }
 }
