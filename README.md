@@ -1,6 +1,6 @@
 # SuperHero API
 
-_Version 1.0.2_
+_Version 1.1.0_
 
 Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
 
@@ -27,6 +27,11 @@ npm start
 -   [Figma](https://www.figma.com/)
 -   [Tenon.io](https://tenon.io/)
 -   [W3C Markup Validation Service](https://validator.w3.org/)
+
+## Future Additions
+
+- Tag filter — feature/tagfilter exists but is incomplete
+- [Passing props using the spread operator](https://dev.to/arikaturika/passing-props-using-the-spread-operator-in-react-52e4)
 
 ## Overall Look and Feel
 

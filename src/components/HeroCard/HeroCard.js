@@ -10,19 +10,23 @@ import classes from './HeroCard.module.scss';
 
 const HeroCard = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [enteredTag, setEnteredTag] = useState("");
+    const [enteredTag, setEnteredTag] = useState('');
 
+    // Destructuring props from hero API feed
     const { id, name, biography, appearance, images, powerstats, tags } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
+
+    // Set a fallback if no data exists for any nested prop
     const noData = 'No data available';
 
+    // Capture tag input and set as props
     const addTagHandler = (event) => {
         event.preventDefault();
         props.addTagToHero(enteredTag, id);
-        setEnteredTag("");
-    }
-    
+        setEnteredTag('');
+    };
+
     return (
         <Card className={`${classes['herocard']} ${classes['herocard--' + alignment]}`}>
             <div className={classes['herocard__image']} style={{ backgroundImage: `url('${images.sm}')` }} />
@@ -31,36 +35,40 @@ const HeroCard = (props) => {
                 <h2>{name}</h2>
                 <ul>
                     <li>
-                        <strong>Real Name: </strong>{fullName || noData}
+                        <strong>Real Name: </strong>
+                        {fullName || noData}
                     </li>
                     <li>
-                        <strong>Race: </strong>{race || noData}
+                        <strong>Race: </strong>
+                        {race || noData}
                     </li>
                     <li>
-                        <strong>Alignment: </strong>{FirstLetterUpper(alignment) || noData}
+                        <strong>Alignment: </strong>
+                        {FirstLetterUpper(alignment) || noData}
                     </li>
                     <li>
-                        <strong>Publisher: </strong>{publisher || noData}
+                        <strong>Publisher: </strong>
+                        {publisher || noData}
                     </li>
                 </ul>
                 <div className={classes.herocard__taglist}>
-                {tags?.map((item, index) => (
-                    <span className={classes.herocard__tag} key={index}>
-                        {item}
-                    </span>
-                ))}
+                    {tags?.map((item, index) => (
+                        <span className={classes.herocard__tag} key={index}>
+                            {item}
+                        </span>
+                    ))}
                 </div>
                 <form className={classes.herocard__tagform} onSubmit={addTagHandler}>
                     <input
                         type='text'
-                        aria-label={"Tag " + name}
+                        aria-label={'Tag ' + name}
                         aria-required='true'
                         name='Hero Tag'
                         autoComplete='name'
-                        placeholder={"Tag " + name}
+                        placeholder={'Tag ' + name}
                         onChange={(event) => setEnteredTag(event.target.value)}
                     />
-                    <Button type="submit">
+                    <Button type='submit'>
                         <FontAwesomeIcon icon={faPlus} size='1x' />
                     </Button>
                 </form>
