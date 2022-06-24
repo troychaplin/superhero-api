@@ -1,6 +1,6 @@
 # SuperHero API
 
-_Version 1.2.0_
+_Version 1.2.1_
 
 Project has been deployed and can be viewed at https://dev.troychaplin.ca/heroes
 

@@ -19,7 +19,7 @@ function Home(props) {
 
     // Add entered tag to hero and update state
     const addTagToHero = (tag, id) => {
-        const addHeroTag = [...heroes];
+        const addHeroTag = [...finalHeroes];
         addHeroTag.map((item) => {
             if (id !== item.id) return item;
             if (item.tags) {
