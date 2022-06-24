@@ -12,8 +12,8 @@ const HeroList = (props) => {
         <Section className={classes.herolist}>
             {props.heroData
                 .filter((heroItem) => heroItem.name.toLowerCase().includes(props.filter.toLowerCase()))
-                .map((heroItem) => (
-                    <HeroCard key={heroItem.id} hero={heroItem} onAddTag={addTagHandler} />
+                .map((heroItem, index) => (
+                    <HeroCard key={index} hero={heroItem} onAddTag={addTagHandler} addTagToHero={props.addTagToHero} />
                 ))}
         </Section>
     );

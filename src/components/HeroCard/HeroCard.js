@@ -11,14 +11,14 @@ const HeroCard = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [enteredTag, setEnteredTag] = useState("");
 
-    const { id, name, biography, appearance, images, powerstats } = props.hero;
+    const { id, name, biography, appearance, images, powerstats, tags } = props.hero;
     const { fullName, alignment, publisher } = biography;
     const { race } = appearance;
     const noData = 'No data available';
 
     const addTagHandler = (event) => {
         event.preventDefault();
-        props.onAddTag({enteredTag, id});
+        props.addTagToHero(enteredTag, id);
         setEnteredTag("");
     }
 
@@ -40,6 +40,13 @@ const HeroCard = (props) => {
                     </li>
                     <li>
                         <strong>Publisher:</strong> {publisher || noData}
+                    </li>
+                    <li>
+                        <strong>Tags:</strong> {tags?.map((item, index) => (
+                            <span className={classes.tagItem} key={index}>
+                                {item}
+                            </span>
+                        )) || noData}
                     </li>
                 </ul>
                 <form onSubmit={addTagHandler}>
